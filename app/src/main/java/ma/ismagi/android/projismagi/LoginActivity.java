@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
                 String password = edPassword.getText().toString();
                 Database db = new Database(getApplicationContext(),"healthcare",null,1);
                 if (username.length()==0 || password.length()==0){
-                    Toast.makeText(getApplicationContext(), "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Incomplete Credentials", Toast.LENGTH_SHORT).show();
                 }else{
                     if (db.login(username,password)==1){
                         Toast.makeText(getApplicationContext(), "Welcome"+username+"!", Toast.LENGTH_SHORT).show();
@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
                         editor.apply();
                         startActivity(new Intent(LoginActivity.this,HomeActivity.class));
                     }else{
-                    Toast.makeText(getApplicationContext(), "Login Successful!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Invalid Credentials", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
