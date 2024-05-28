@@ -42,8 +42,8 @@ public class BookAppointmentActivity extends AppCompatActivity {
         ed3 = findViewById(R.id.editTextAppContactNumber);
         ed4 = findViewById(R.id.editTextAppFees);
         dateButton = findViewById(R.id.buttonAppDate);
-        timeButton = findViewById(R.id.buttonBookAppointment);
-        btnBook = findViewById(R.id.buttonAppTime);
+        timeButton = findViewById(R.id.buttonAppTime);
+        btnBook = findViewById(R.id.buttonBookAppointment);
         btnBack = findViewById(R.id.buttonAppBack);
 
         ed1.setKeyListener(null);
@@ -62,14 +62,16 @@ public class BookAppointmentActivity extends AppCompatActivity {
         ed1.setText(fullname);
         ed2.setText(address);
         ed3.setText(contact);
-        ed4.setText("Cons Fees : " + fees + "/-");
+        ed4.setText("Cons Fees : " +fees+ "/-");
 
         //DatePicker
         initDatePicker();
         dateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 datePickerDialog.show();
+
             }
         });
 
@@ -109,10 +111,10 @@ public class BookAppointmentActivity extends AppCompatActivity {
     {
                 DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener() {
                     @Override
-                    public void onDateSet(DatePicker view, int i, int i1, int i2) {
+                    public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
 
-                                i1= i1+1;
-                               dateButton.setText(i2+"/"+i1+"/"+i);
+                                i1=i1+1;
+                                dateButton.setText(i2+"/"+i1+"/"+i);
                     }
                 };
 
