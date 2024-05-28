@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".BookAppointmentActivity">
+    tools:context=".LabTestBookActivity">
+
+
 
     <TextView
         android:id="@+id/textViewTitle"
@@ -27,9 +29,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Book Appointment"
-        android:textColor="@color/white"
-        android:textSize="34sp"
+        android:text="Please Fill All Details for Booking"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -40,7 +42,7 @@
         android:id="@+id/editTextAppFullName"
         android:layout_width="326dp"
         android:layout_height="43dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
@@ -83,7 +85,7 @@
         app:layout_constraintVertical_bias="0.108" />
 
     <EditText
-        android:id="@+id/editTextAppFees"
+        android:id="@+id/editTextAppContactNumber"
         android:layout_width="330dp"
         android:layout_height="43dp"
         android:layout_marginTop="20dp"
@@ -91,7 +93,7 @@
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Fees"
+        android:hint="Contact Number"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -102,10 +104,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppContactNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppPinCode" />
 
     <EditText
-        android:id="@+id/editTextAppContactNumber"
+        android:id="@+id/editTextAppPinCode"
         android:layout_width="330dp"
         android:layout_height="43dp"
         android:layout_marginTop="28dp"
@@ -113,7 +115,7 @@
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Contact Number"
+        android:hint="Pin Code"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -130,78 +132,13 @@
         android:id="@+id/buttonBookAppointment"
         android:layout_width="316dp"
         android:layout_height="47dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="144dp"
         android:background="@drawable/btn_bg"
-        android:text="Book Appointement"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppContactNumber" />
-
-    <Button
-        android:id="@+id/buttonAppBack"
-        android:layout_width="316dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="296dp"
-        android:background="@drawable/btn_bg"
-        android:text="Back"
+        android:text="Book"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppContactNumber" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:text="Select Date"
-        android:textColor="@color/yellow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:text="Select Time"
-        android:textColor="@color/yellow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.806"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
-
-
-    <Button
-        android:id="@+id/buttonAppDate"
-        style="?android:spinnerStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="27/10/2022"
-        android:textColor="@color/yellow"
-        app:layout_constraintBottom_toTopOf="@+id/buttonBookAppointment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.25" />
-
-    <Button
-        android:id="@+id/buttonAppTime"
-        style="?android:spinnerStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10:00"
-        android:textColor="@color/yellow"
-        app:layout_constraintBottom_toTopOf="@+id/buttonBookAppointment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.832"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppPinCode" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

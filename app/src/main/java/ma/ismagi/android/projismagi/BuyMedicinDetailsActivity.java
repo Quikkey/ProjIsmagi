@@ -16,56 +16,54 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class LabTestDetailsActivity extends AppCompatActivity {
+public class BuyMedicinDetailsActivity extends AppCompatActivity {
 
 
-    TextView tvPackageName  , tvTotalCost;
+    TextView tvPackageName, tvTotalCost;
     EditText edDetails;
-
-    Button btnAddToCart , btnBack;
+    Button btnback,btnAddToCart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_lab_test_details);
+        setContentView(R.layout.activity_buy_medicin_details);
 
         tvPackageName = findViewById(R.id.textViewLDPackageName);
-        tvTotalCost = findViewById(R.id.textViewTotalCost);
         edDetails = findViewById(R.id.ediTextMultiline);
-        btnAddToCart = findViewById(R.id.buttonAddToCart);
-        btnBack = findViewById(R.id.buttonBack);
         edDetails.setKeyListener(null);
+        tvTotalCost = findViewById(R.id.textViewTotalCost);
+        btnback = findViewById(R.id.buttonBack);
+        btnAddToCart = findViewById(R.id.buttonAddToCart);
 
-        Intent intent=getIntent();
+        Intent intent = getIntent();
         tvPackageName.setText(intent.getStringExtra("text1"));
         edDetails.setText(intent.getStringExtra("text2"));
         tvTotalCost.setText("Total Cost :"+intent.getStringExtra("text3")+"/-");
 
-        btnBack.setOnClickListener(new View.OnClickListener() {
+
+        btnback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    startActivity(new Intent(LabTestDetailsActivity.this , LabTestAcitivy.class));
-
+                    startActivity(new Intent(BuyMedicinDetailsActivity.this , BuyMedicineActivity.class));
             }
         });
         btnAddToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedPreferences sharedpreferences =  getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
-                String username =   sharedpreferences.getString("username","").toString();
+                SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
+                String username = sharedPreferences.getString("username", "").toString();
                 String product = tvPackageName.getText().toString();
                 float price = Float.parseFloat(intent.getStringExtra("text3").toString());
 
-                Database db = new Database(getApplicationContext(),"healthcare", null , 1);
+                Database db = new Database(getApplicationContext(), "healthcare", null, 1);
 
-                if(db.checkCart(username,product)==1)
-                {
-                    Toast.makeText(getApplicationContext(), "Product Already Added",Toast.LENGTH_SHORT).show();
-                }else
-                {
-                    db.addCart(username,product,price,"Lab");
-                    Toast.makeText(getApplicationContext(), "Record Inserted To Cart",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(LabTestDetailsActivity.this,LabTestAcitivy.class));
+
+                if (db.checkCart(username, product) == 1) {
+                    Toast.makeText(getApplicationContext(), "Product Already Added", Toast.LENGTH_SHORT).show();
+                } else {
+                    db.addCart(username, product, price, "medicine");
+                    Toast.makeText(getApplicationContext(), "Record Inserted To Cart", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(BuyMedicinDetailsActivity.this, BuyMedicineActivity.class));
                 }
             }
         });
