@@ -13,24 +13,6 @@
         android:theme="@style/Theme.ProjIsmagi"
         tools:targetApi="31">
         <activity
-            android:name=".BuyMedicineBookActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CartBuyMedicinActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BuyMedicinDetailsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BuyMedicineActivity"
-            android:exported="false" />
-        <activity
-            android:name=".OrderDetailsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LabTestBookActivity"
-            android:exported="false" />
-        <activity
             android:name=".CartLabActivity"
             android:exported="false" />
         <activity

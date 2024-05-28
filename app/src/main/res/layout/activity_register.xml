@@ -39,7 +39,7 @@
         android:id="@+id/editTextRegUsername"
         android:layout_width="326dp"
         android:layout_height="52dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
@@ -76,10 +76,10 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextRegUsername"
-        app:layout_constraintVertical_bias="0.979" />
+        app:layout_constraintVertical_bias="0.876" />
 
     <EditText
         android:id="@+id/editTextRegConfirmPassword"

@@ -41,7 +41,7 @@
 
 
     <TextView
-        android:id="@+id/textViewLDPackageName"
+        android:id="@+id/textViewDDtitle2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lab Test and Package"
@@ -58,26 +58,27 @@
     <EditText
         android:id="@+id/ediTextMultiline"
         android:layout_width="290dp"
-        android:layout_height="336dp"
+        android:layout_height="372dp"
         android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
         android:editable="false"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:padding="10dp"
         android:text="Hi \nHello"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLDPackageName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDDtitle"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonAddToCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="88dp"
         android:text="Add To Cart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -88,28 +89,24 @@
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="88dp"
         android:text="Back"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTotalCost"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalCost" />
 
     <TextView
         android:id="@+id/textViewTotalCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textColor="@color/yellow"
-        android:textSize="20dp"
+        android:textColor = "@color/yellow"
+        android:textSize = "20dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonAddToCart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ediTextMultiline"
-        app:layout_constraintVertical_bias="0.594" />
+        app:layout_constraintTop_toBottomOf="@+id/ediTextMultiline" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

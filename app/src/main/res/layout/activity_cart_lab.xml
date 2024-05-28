@@ -9,13 +9,13 @@
     tools:context=".CartLabActivity">
 
     <Button
-        android:id="@+id/buttonCartTime"
+        android:id="@+id/buttonAppTime"
         style="?android:spinnerStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="10:00"
         android:textColor="@color/yellow"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCartBack"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDDBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.907"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,15 +29,15 @@
         android:layout_marginBottom="76dp"
         android:text="Select Time"
         android:textColor="@color/yellow"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCartBack"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDDBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.902"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewCart"
+        app:layout_constraintTop_toBottomOf="@+id/lisViewCard"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/buttonCartDate"
+        android:id="@+id/buttonAppDate"
         style="?android:spinnerStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewCart"
+        app:layout_constraintTop_toBottomOf="@+id/lisViewCard"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -97,7 +97,7 @@
 
 
     <TextView
-        android:id="@+id/textViewCartTitle"
+        android:id="@+id/textViewDDtitle2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lab Test and Package"
@@ -112,7 +112,7 @@
         app:layout_constraintVertical_bias="0.082" />
 
     <ListView
-        android:id="@+id/listViewCart"
+        android:id="@+id/lisViewCard"
         android:layout_width="347dp"
         android:layout_height="307dp"
         android:layout_margin="10dp"
@@ -121,13 +121,14 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewDDtitle"
-        app:layout_constraintVertical_bias="0.232" />
+        app:layout_constraintVertical_bias="0.178" />
 
     <Button
 
-        android:id="@+id/buttonCartBack"
+        android:id="@+id/buttonDDBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BACK"
@@ -135,7 +136,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewCart"
+        app:layout_constraintTop_toBottomOf="@+id/lisViewCard"
         app:layout_constraintVertical_bias="0.903" />
 
     <Button
@@ -148,23 +149,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewCart"
+        app:layout_constraintTop_toBottomOf="@+id/lisViewCard"
         app:layout_constraintVertical_bias="0.903" />
 
     <TextView
-        android:id="@+id/textViewCartTotalPrice"
+        android:id="@+id/textViewTotalCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Total Cost : 2000/-"
+        android:text="Total Cost : 2000/"
         android:textColor="@color/yellow"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewCart"
-        app:layout_constraintVertical_bias="0.815" />
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/lisViewCard"
+        app:layout_constraintVertical_bias="0.35" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
