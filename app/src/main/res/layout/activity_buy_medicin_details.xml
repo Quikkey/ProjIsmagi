@@ -3,11 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/back1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back1"
-    tools:context=".LabTestDetailsActivity">
-
+    tools:context=".BuyMedicinDetailsActivity">
     <TextView
         android:id = "@+id/textViewDDName"
         android:layout_width="wrap_content"
@@ -44,7 +43,7 @@
         android:id="@+id/textViewLDPackageName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lab Test and Package"
+        android:text="Buy Medicines"
         android:textColor="@color/yellow"
         android:textSize="20sp"
         android:textStyle="bold"
