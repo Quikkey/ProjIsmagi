@@ -39,7 +39,7 @@
     <EditText
         android:id="@+id/editTextAppFullName"
         android:layout_width="326dp"
-        android:layout_height="43dp"
+        android:layout_height="52dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
@@ -61,7 +61,7 @@
     <EditText
         android:id="@+id/editTextAppAddress"
         android:layout_width="326dp"
-        android:layout_height="43dp"
+        android:layout_height="52dp"
         android:layout_marginBottom="308dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_security_24"
@@ -85,7 +85,7 @@
     <EditText
         android:id="@+id/editTextAppFees"
         android:layout_width="330dp"
-        android:layout_height="43dp"
+        android:layout_height="56dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
@@ -107,7 +107,7 @@
     <EditText
         android:id="@+id/editTextAppContactNumber"
         android:layout_width="330dp"
-        android:layout_height="43dp"
+        android:layout_height="56dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_email_24"
@@ -130,11 +130,11 @@
         android:id="@+id/buttonBookAppointment"
         android:layout_width="316dp"
         android:layout_height="47dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="276dp"
         android:background="@drawable/btn_bg"
-        android:text="Book Appointement"
+        android:text="Register"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAppContactNumber" />
 
@@ -142,11 +142,11 @@
         android:id="@+id/buttonAppBack"
         android:layout_width="316dp"
         android:layout_height="47dp"
-        android:layout_marginTop="296dp"
+        android:layout_marginTop="352dp"
         android:background="@drawable/btn_bg"
         android:text="Back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAppContactNumber" />
 
